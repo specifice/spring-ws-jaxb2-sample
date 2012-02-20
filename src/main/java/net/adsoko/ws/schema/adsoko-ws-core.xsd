@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://adsoko.net/ws/2012/Core"
+	xmlns:tns="http://adsoko.net/ws/2012/Core" targetNamespace="http://adsoko.net/ws/2012/Core"
+	elementFormDefault="qualified">
+
+	<xs:element name="sampleRequest" type="sampleRequestType" />
+	<xs:complexType name="sampleRequestType">
+		<xs:sequence>
+			<xs:element name="request" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="sampleResponse" type="sampleResponseType" />
+	<xs:complexType name="sampleResponseType">
+		<xs:sequence>
+			<xs:element name="response" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
